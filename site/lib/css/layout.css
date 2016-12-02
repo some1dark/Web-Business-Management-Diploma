@@ -1,0 +1,30 @@
+/* layout.less
+   ========================================================================== */
+header {
+  margin: 0 auto;
+}
+nav {
+  width: 30rem;
+  height: 40rem;
+  margin-left: 10rem;
+  background-color: #000000;
+  font-size: 1.9rem;
+  position: absolute;
+  filter: drop-shadow(0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.8));
+  /* right */
+}
+section {
+  margin: 0 auto;
+}
+.head-banner {
+  height: 40rem;
+  background-color: #dedede;
+}
+.head-banner h2 {
+  font-size: 3rem;
+  padding: 33.33rem 0 0 45rem;
+}
+.head-bar {
+  height: 3rem;
+  background-color: black;
+}

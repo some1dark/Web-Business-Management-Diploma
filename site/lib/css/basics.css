@@ -1,0 +1,12 @@
+/* basics.less
+   ========================================================================== */
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+.devcolor {
+  background-color: rgba(0, 0, 0, 0.5);
+}

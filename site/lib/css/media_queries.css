@@ -1,0 +1,11 @@
+/* media_queries.less
+   ========================================================================== */
+@media only screen and (min-width: 1440px) {
+  /* styles für MacBook Pro Bildschirme u. Größer */
+}
+@media only screen and (min-width: 1200px) {
+  /* styles für Breitbild */
+}
+@media only screen and (max-width: 320px) {
+  /* styles für Handy */
+}

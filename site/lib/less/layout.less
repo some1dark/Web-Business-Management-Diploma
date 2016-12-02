@@ -1,0 +1,100 @@
+/* layout.less
+   ========================================================================== */
+
+header {
+	margin: 0 auto;
+}
+
+nav {
+	width: 30rem;
+	height:@header-img-hight;
+	margin-left: 10rem;
+	background-color: rgba(175,45,45,1);
+	font-size: 1.9rem;
+	position: absolute;
+	
+	filter: drop-shadow(0.4rem 0.4rem 0.5rem rgba(0,0,0,0.5)); /* right */
+	
+	logo{
+		
+		h1 {
+			text-align: justify;
+			font-family: 'Rajdhani', sans-serif;
+			color: #000;
+			padding:0.8rem 0 0 11.5rem;
+			font-weight: 900;
+			text-shadow: 0.05rem 0.05rem 0.4rem rgba(143,0,0,0.8);
+		}
+	}
+	
+	hr {
+		border: 0;
+		height: 0.05rem;
+		background-image: linear-gradient(to right, rgba(175, 0, 0, 0), rgba(97, 0, 0, 0.75), rgba(175, 0, 0, 0));
+	}
+	
+	ul.socials {
+		margin-top: @header-img-hight - 5.4rem;;
+		background-color: rgba(175,45,45,1);
+		text-align: right;
+		display: inline-block;
+		width: 100%;
+		
+		li {
+			&:first-child {
+				padding-left: 0;
+			}
+			
+			display: inline;
+			padding-left: 1rem;
+			color: #fff;
+			
+			&:last-child {
+				padding-right: 1rem;
+			}
+		}
+	}
+}
+
+section {margin: 0 auto;}
+
+section#lp-top {
+	.search {
+		background-color: aliceblue;
+		//position: relative;
+		width: 15rem;
+		height: 2.5rem;
+		margin: 1.3rem 1.3rem 0 0;
+		float: right;
+	}
+
+}
+
+
+
+.head-banner {	
+	height: @header-img-hight + 1.1;
+	
+	background-image: url(../../img/header/france.jpg);
+	//background-color: #dedede;
+	
+	/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.head-banner h2 {
+	font-size: 3rem;
+	padding: 25rem 0 0 45rem;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.head-bar {
+	height: 3rem;
+	background-color: black;
+}
+
+main {}
+
