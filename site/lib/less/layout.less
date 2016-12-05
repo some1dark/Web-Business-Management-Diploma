@@ -12,6 +12,7 @@ nav {
 	background-color: rgba(175,45,45,1);
 	font-size: 1.9rem;
 	position: absolute;
+	z-index: 10;
 	
 	filter: drop-shadow(0.4rem 0.4rem 0.5rem rgba(0,0,0,0.5)); /* right */
 	
@@ -33,8 +34,16 @@ nav {
 		background-image: linear-gradient(to right, rgba(175, 0, 0, 0), rgba(97, 0, 0, 0.75), rgba(175, 0, 0, 0));
 	}
 	
-	ul.socials {
-		margin-top: @header-img-hight - 5.4rem;;
+	.socials {
+		margin-top: @header-img-hight - 4.85rem;
+		background-color: rgba(175,45,45,1);
+		text-align: right;
+		display: inline-block;
+		width: 100%;
+	}
+	
+	/*ul.socials {
+		margin-top: @header-img-hight - 5.4rem;
 		background-color: rgba(175,45,45,1);
 		text-align: right;
 		display: inline-block;
@@ -53,6 +62,30 @@ nav {
 				padding-right: 1rem;
 			}
 		}
+	}*/
+	
+	.corner-front {
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 2rem 15rem 0 0;
+		border-color: rgba(175,45,45,1) transparent transparent transparent;
+		line-height: 0px;
+		_border-color: rgba(175,45,45,1) #000000 #000000 #000000;
+		_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+	}
+	
+	.corner-back {
+		position: relative;
+		//width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 15rem 2rem 0;
+		border-color: transparent rgba(175,45,45,1) transparent transparent;
+		line-height: 0px;
+		_border-color: #000000 rgba(175,45,45,1) #000000 #000000;
+		_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 	}
 }
 
@@ -60,12 +93,14 @@ section {margin: 0 auto;}
 
 section#lp-top {
 	.search {
-		background-color: aliceblue;
+		background-color: #2b2b2b;
 		//position: relative;
-		width: 15rem;
-		height: 2.5rem;
-		margin: 1.3rem 1.3rem 0 0;
+		width: 14.6rem;
+		height: 2.6rem;
+		padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+		//margin: 1.3rem 1.3rem 0 0;
 		float: right;
+		//z-index: 10;
 	}
 
 }
@@ -75,7 +110,7 @@ section#lp-top {
 .head-banner {	
 	height: @header-img-hight + 1.1;
 	
-	background-image: url(../../img/header/france.jpg);
+	//background-image: url(../../img/header/france.jpg);
 	//background-color: #dedede;
 	
 	/* Create the parallax scrolling effect */
@@ -97,4 +132,118 @@ section#lp-top {
 }
 
 main {}
+
+// Slider
+
+.slides {
+    padding: 0;
+    width: 100%;
+    height: @header-img-hight + 1.1;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+	z-index: 8;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+
+    //transform: scale(0);
+
+    transition: all .7s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 31.1rem;;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    //transform: scale(1);
+
+    transition: opacity 1s ease;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(0, 0, 0, 0.8);
+}
 

@@ -8,14 +8,32 @@
   <meta name="description" content="Diploma-Abschlussarbeit in Web Business Management für ein fiktives Museum">
   <meta name="author" content="Stephen James Morris">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="lib/css/style.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  
+  <!-- Anti-Clickjacking -->
+  <style>
+	  body { display: none;}
+  </style>
 </head>
 
 <body>
+
+<!-- Anti-Clickjacking script 
+	 http://javascript.info/tutorial/clickjacking
+-->
+<script> 
+  if (self === top) {
+    var theBody = document.getElementsByTagName('body')[0]
+    theBody.style.display = "block"
+  } else { 
+    top.location = self.location 
+  }
+</script>
 
 <header>
 	<nav>
@@ -25,98 +43,105 @@
 		
 		<hr>
 		
-		<ul class="socials">
-			<li>F</li>
-			<li>T</li>
-			<li>G</li>
-			<li>G</li>
-			<li>E</li>
-		</ul>
+		<div class="socials"></div>
+		
+		<div class="corner-front"></div>
+		<div class="corner-back"></div>
+		
 	</nav>
 	
 	<section id="lp-top">
+		
+		<div class="head-banner">
+			<!-- slider start -->
+			<ul class="slides">
+				<input type="radio" name="radio-btn" id="img-1" checked />
+				<li class="slide-container">
+					<div class="slide">
+						<img src="img/header/france.jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-6" class="prev">&#x2039;</label>
+						<label for="img-2" class="next">&#x203a;</label>
+					</div>
+				</li>
+
+				<input type="radio" name="radio-btn" id="img-2" />
+				<li class="slide-container">
+					<div class="slide">
+					  <img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-1" class="prev">&#x2039;</label>
+						<label for="img-3" class="next">&#x203a;</label>
+					</div>
+				</li>
+
+				<input type="radio" name="radio-btn" id="img-3" />
+				<li class="slide-container">
+					<div class="slide">
+					  <img src="http://farm9.staticflickr.com/8068/8250438572_d1a5917072_z.jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-2" class="prev">&#x2039;</label>
+						<label for="img-4" class="next">&#x203a;</label>
+					</div>
+				</li>
+
+				<input type="radio" name="radio-btn" id="img-4" />
+				<li class="slide-container">
+					<div class="slide">
+					  <img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-3" class="prev">&#x2039;</label>
+						<label for="img-5" class="next">&#x203a;</label>
+					</div>
+				</li>
+
+				<input type="radio" name="radio-btn" id="img-5" />
+				<li class="slide-container">
+					<div class="slide">
+					  <img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-4" class="prev">&#x2039;</label>
+						<label for="img-6" class="next">&#x203a;</label>
+					</div>
+				</li>
+
+				<input type="radio" name="radio-btn" id="img-6" />
+				<li class="slide-container">
+					<div class="slide">
+					  <img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-5" class="prev">&#x2039;</label>
+						<label for="img-1" class="next">&#x203a;</label>
+					</div>
+				</li>
+
+				<li class="nav-dots">
+				  <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+				  <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+				  <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+				  <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+				  <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+				  <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+				</li>
+			</ul><!-- ./slider -->
+			
+		</div>
+		
 		<div class="search">
 			search bar
-		</div>
-		<div class="head-banner">
-			<h2>Image Title</h2>
 		</div>
 		
 		<div class="head-bar">bar</div>
 	</section>
 </header>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 <main>
 	<section id="lp-mid">
@@ -131,6 +156,76 @@
 		
 	</section>
 </main>
+ 
+ <br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br>
   
 <footer>
 	123
