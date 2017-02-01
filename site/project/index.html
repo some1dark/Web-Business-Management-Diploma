@@ -1,0 +1,263 @@
+<!--
+			Diplama-Abschlussarbeit Web Business Management
+			Stephen James Morris
+-->
+
+<!DOCTYPE html>
+<html lang="de"> 																<!-- Um welche Sprache handelt sich der Inhalt der Seite -->
+<head>
+	<meta charset="utf-8">  													<!-- Wie die Seite codiert wird -->
+
+	<link rel="Shortcut Icon" type="image/ico" href="favicon/favicon.ico" /> 		<!-- Icon & App Icons die für die Seite verwendet werden -->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />		<!-- Der Viewport der Seite -->
+
+	<title>Das Museum der besonderen Art - Der Tiefe Weinkeller</title> 		<!-- Relevante Keywords einbinden -->
+
+	<!-- meta data -->
+	<meta name="description" content="Beschreibung der Seite"> 					<!-- SEO beschreibung für GOOGLE mit relevanten Keywords. Max 160 Zeichen -->
+	<meta name="keywords" content="Keywords der Seite"> 						<!-- Relevante Keywords für Suchmaschienen. KEINE Relevanz für GOOGLE -->
+
+	<!-- Open Graph -->															<!-- Vorgegebene Daten die für das Teilen auf Facebook genuzt werden -->
+	<meta property="og:title" content="Das Museum der besonderen Art">			<!-- Seiten Tietel -->
+	<meta property="og:site_name" content="Der Tiefe Weinkeller">				<!-- Seiten Name -->
+	<meta property="og:url" content="https://der-tiefe-weinkeller.de">			<!-- Die URL der Seite -->
+	<meta property="og:description" content="Beschreibung der Seite">			<!-- Beschreibung für die Vorschau auf Facebook -->
+	<meta property="og:type" content="website">									<!-- Typ des Inhalts -->
+	<meta property="og:image" content="https://der-tiefe-weinkeller.de/1.jpg">	<!-- Der User darf sich anhand der vorgegebenen Bilder aussuchen wie er es auf Facebook teilen möchte -->
+	<meta property="og:image" content="https://der-tiefe-weinkeller.de/2.jpg">
+	<meta property="og:image" content="https://der-tiefe-weinkeller.de/3.jpg">
+
+	<!-- Twitter Cards -->															<!-- Vorgegebene Daten die für das Teilen auf Twitter genuzt werden -->
+	<meta name="twitter:card" content="photo" />									<!-- Das zu verwendende Bild für die Twitter Card -->
+	<meta name="twitter:site" content="@dertiefeweinkeller" />						<!-- Twitter User -->
+	<meta name="twitter:title" content="Der Tiefe Weinkeller" />					<!-- Titel der Twitter Card -->
+	<meta name="twitter:image" content="https://der-tiefe-weinkeller.de/1.jpg" />	<!-- Bild für die Twitter Card -->
+	<meta name="twitter:url" content="https://der-tiefe-weinkeller.de" />
+
+	<!-- Geo Tags -->															<!-- Aussage über die geografische Lokation einer Webseite -->
+	<meta name="DC.title" content="Der Tiefe Weinkeller" />						<!-- Dublin Core ist kein Geo Tag, wird aber von einigen Datenbanken verwendet -->
+	<meta name="geo.region" content="DE-NI" />									<!-- Das Land und Region der Webseite -->
+	<meta name="geo.placename" content="Gehrden" />								<!-- Ortsname -->
+	<meta name="geo.position" content="52.31843;9.58899" />						<!-- Geo Position der Webseite -->
+	<meta name="ICBM" content="52.31843, 9.58899" />							<!-- Geo Position der Webseite -->
+
+	<link rel="canonical" href="https://der-tiefe-weinkeller.de">				<!-- Duplicate Content vermeiden -->
+
+	<meta name="author" content="Stephen James Morris"> 						<!-- Author der Seite bzw. des Inhaltes -->
+    <meta name="robots" content="index, follow"> 								<!-- Wie sich Crawler bei Links zu verhalten haben -->
+    <meta name="revisit-after" content="7 days" /> 								<!-- Wie oft soll der Crawler die Seite besuchen -->
+
+	<!-- CSS / LESS / FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/icomoon.css" media="screen" /> 			<!-- Icons als Font. Fontawson könnte man auch verwenden -->
+	<link rel="stylesheet" href="style.css" media="screen" /> 					<!-- Das Design der Webseite -->
+
+	<!-- IE Fix  -->															<!-- Der Microsoft Internet Explorer hat IMMER Sonderwünsche was das Design angeht-->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" href="css/ie.css" />
+	<![endif]-->
+
+	<!-- JS -->																	<!-- JavaScript die benötigt werden bevor der Inhalt geladen wird -->
+
+	<!-- Schema.org Microdata & Rich-Snippets -->
+	<script> 																	// JSON-LD Rich-Snippets für die Organisation. Verbessert SEO!
+	{
+		"@context": "http://schema.org/",
+		"@type": "Organization",
+		"name": "Der Tiefe Weinkeller",
+
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "Lyrastraße, 2a",
+			"addressLocality": "Gehrden",
+			"addressRegion": "Niedersachsen",
+			"postalCode": "30989"
+		},
+
+		"telephone": "+4915236262894"
+	}
+	</script>
+
+	<script>																	// JSON-LD Rich-Snippets für Personen. Verbessert SEO!
+	{
+		"@context": "http://schema.org/",
+		"@type": "Person",
+		"name": "Stephen James Morris",
+		"jobTitle": "Web Business Manager",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Gehrden",
+			"addressRegion": "Niedersachsen"
+		}
+	}
+	</script>
+
+
+</head>
+
+<body class="fullscreen">
+
+	<!-- page loader -->
+	<div class="loadreveal"></div>
+	<div id="loadscreen">
+		<div id="loader">
+			<span></span>
+		</div>
+	</div>
+	<!-- ./ page loader -->
+
+	<!-- header -->
+	<header role="banner" id="header">
+
+		<!-- wrapper -->
+		<div class="wrapper">
+
+			<!-- logo -->
+			<h1 id="logo">
+				<a href="index.html" rel="home" id="logo-svg-animated"><span>Der Tiefe Weinkeller</span></a>
+			</h1><!-- ./ logo -->
+
+			<!-- main menu -->
+			<nav id="mainmenu" role="navigation">
+				<div id="menu-burger">
+					<i class="icon-menu"></i>
+				</div>
+
+				<div id="searchicon">
+					<i class="icon-search"></i>
+					<form action="/" method="get" id="searchbar">
+						<fieldset>
+							<input type="text" name="s" id="searchbar-input" value="" />
+							<button type="submit" id="searchbar-submit"></button>
+						</fieldset>
+					</form>
+				</div>
+
+				<!-- menue -->
+				<div id="menu">
+					<ul>
+						<li class="current-menu-item"><a href="#">Home</a>
+
+						</li>
+
+						<li class="menu-item-has-children"><a href="#">Museum</a>
+							<ul class="sub-menu">
+								<li><a href="#">Veranstaltungen</a></li>
+								<li><a href="#">Führungen</a></li>
+								<li><a href="#">Geschichte</a></li>
+							</ul>
+						</li>
+
+						<li class="menu-item-has-children"><a href="#">Blog</a>
+							<ul class="sub-menu">
+								<li><a href="#">Neue Weine</a></li>
+								<li><a href="#">Auszeichnungen</a></li>
+								<li><a href="#">Geschichte</a></li>
+								<li><a href="#">Archiv</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#">Videos</a></li>
+						<li><a href="#">Über Uns</a></li>
+						<li><a href="#">Impressum</a></li>
+					</ul>
+				</div><!-- ./ menue -->
+			</nav><!-- ./ main menue -->
+
+		</div> <!-- /. wrapper -->
+
+	</header>
+
+	<!-- main content -->
+	<section id="content" role="main">
+		<div class="wrapper">
+
+		<!-- WYSIWYG -->
+			<div class="position-absolute">
+				<h2 class="big no-margin"><strong>DER TIEFE WEINKELLER</strong></h2>
+				<h2>Der Weg eines edlen Tropfens - von der Rebe zum Glas!</h2><br />
+			</div>
+
+			<div class="gallery fullscreen-gallery kenburns-gallery">
+
+				<canvas id="kenburns"></canvas> <!-- background immage effect -->
+
+				<figure class="gallery-item landscapes">
+					<header class='gallery-icon'>
+						<a href="#"><img src="imgs/photography/tuscany-428041.jpg"  alt="" /></a>
+					</header>
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<p>Diploma-Abschlussprojekt in Web Business Management von Stephen James Morris</p>
+						</div>
+					</figcaption>
+				</figure>
+
+				<figure class="gallery-item landscapes">
+					<header class='gallery-icon'>
+						<a href="#"><img src="imgs/photography/wine-1842946.jpg"  alt="" /></a>
+					</header>
+				</figure>
+
+				<figure class="gallery-item landscapes">
+					<header class='gallery-icon'>
+						<a href="#"><img src="imgs/photography/winemaking-1864485.jpg"  alt="" /></a>
+					</header>
+				</figure>
+
+			</div>
+			<!-- ./ WYSIWYG -->
+
+		</div><!-- /. wrapper -->
+
+	</section><!-- ./ main content -->
+
+
+
+	<footer id="footer" role="contentinfo">
+		<ul class="social-icons">
+			<li><a href="#" target="_blank" title="Flickr"><i class="icon-flickr"></i></a></li>
+			<li><a href="#" target="_blank" title="Facebook"><i class="icon-facebook"></i></a></li>
+			<li><a href="#" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+		</ul>
+	</footer>
+
+<!-- JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/retina.min.js"></script>
+<!-- include image popups -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- include mousewheel plugins -->
+<script src="js/jquery.mousewheel.min.js"></script>
+<!-- include gallery cycle plugin -->
+<script src="js/jquery.cycle.min.js"></script>
+<!-- include kenburns plugins -->
+<script src="js/kenburns.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="js/scripts.js"></script>
+
+<!-- google analytics -->
+
+</body>
+</html>
